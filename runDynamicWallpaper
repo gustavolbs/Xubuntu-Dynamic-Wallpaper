@@ -1,4 +1,4 @@
 #! /bin/bash
 
-/mojave/dynamicWallpaper
-watch -n3600 /mojave/dynamicWallpaper &>/dev/null &
+mojave/dynamicWallpaper
+watch -n600 mojave/dynamicWallpaper &>/dev/null &
