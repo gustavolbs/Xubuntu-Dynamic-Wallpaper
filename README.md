@@ -1,6 +1,11 @@
+# Xubuntu-Dynamic-Wallpaper ![Xubuntu Xubuntu_Dynamic_Wallpaper](https://svgshare.com/i/8ne.svg) ![Xubuntu macOS_Mojave](https://svgshare.com/i/8mR.svg)
+* This script changes automatically the wallpaper on your desktop according to the hour of your pc.
+
+## Advise
+* This script was tested on Xubuntu. It can run properly or not on other XFCE distros. Feel free to contact me about bugs, working on other systems and what you think is relevant.
+
 ## Contact
 * If you have any question or sugestion, contact me and I will answer faster as I can.
-
 
 ## Installing
 
