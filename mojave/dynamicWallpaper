@@ -1,7 +1,7 @@
 # /bin/bash
 
 hora=$(date '+%H')
-dir="$PWD/mojave"
+dir="$HOME/Imagens/mojave"
 
 case $hora in
 
@@ -30,7 +30,6 @@ case $hora in
 22) imagem="14.jpeg";;
 23) imagem="14.jpeg";;
 esac
-
 
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s "$dir/$imagem"
 

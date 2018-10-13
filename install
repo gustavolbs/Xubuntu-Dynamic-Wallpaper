@@ -9,16 +9,22 @@ mkdir ~/.config/autostart
 
 echo "[Desktop Entry]
 Encoding=UTF-8
-Version=0.9.4
+Version=1.0
 Type=Application
-Name=Dynamic Wallpaper
+Name=Dynamic-Wallpaper
+Name[pt_BR]=Dynamic-Wallpaper
 Comment=Mojave Dynamic Wallpaper
-Exec=$exepath/./runDynamicWallpaper
-OnlyShowIn=XFCE;
-StartupNotify=false
+Icon=/home/gustavolbs/Downloads/mojave.png
+Exec=/home/gustavolbs/Imagens/./runDynamicWallpaper
+Categories=Accessories;Utility;
 Terminal=false
+StartupWMClass=Dynamic-Wallpaper
+Path=
+StartupNotify=false
+OnlyShowIn=XFCE;
 Hidden=false" >> 'Dynamic Wallpaper.desktop'
 chmod 777 'Dynamic Wallpaper.desktop'
+cp 'Dynamic Wallpaper.desktop' $HOME'/.local/share/applications'
 mv 'Dynamic Wallpaper.desktop' ~/.config/autostart
 
 cd ..
