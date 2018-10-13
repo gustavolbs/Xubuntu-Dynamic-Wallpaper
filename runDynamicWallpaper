@@ -1,4 +1,3 @@
 #! /bin/bash
 
-mojave/dynamicWallpaper
 watch -n600 mojave/dynamicWallpaper &>/dev/null &
