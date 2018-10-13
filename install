@@ -1,0 +1,24 @@
+#! /bin/bash
+
+mv mojave/ ../
+mv runDynamicWallpaper ../
+exe=$pwd
+mkdir ~/.config
+mkdir ~/.config/autostart
+
+echo "[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Dynamic Wallpaper
+Comment=Troca o Wallpaper automático
+Exec=$exe
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false" >> 'Dynamic Wallpaper.desktop'
+mv 'Dynamic Wallpaper.desktop' ~/.config/autostart
+
+cd ..
+rm -rf Xubuntu-Dynamic-Wallpaper
+
