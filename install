@@ -24,7 +24,7 @@ StartupNotify=false
 OnlyShowIn=XFCE;
 Hidden=false" >> 'Dynamic Wallpaper.desktop'
 chmod 777 'Dynamic Wallpaper.desktop'
-cp 'Dynamic Wallpaper.desktop' $HOME'/.local/share/applications'
+cp 'Dynamic Wallpaper.desktop' '~/.local/share/applications'
 mv 'Dynamic Wallpaper.desktop' ~/.config/autostart
 
 cd ..
