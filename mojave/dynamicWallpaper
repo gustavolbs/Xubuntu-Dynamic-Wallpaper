@@ -1,7 +1,4 @@
-# /bin/dynamicWallpaper: crontab entries for the dynamicWallpaper package
-
-SHELL=/bin/bash
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# /bin/bash
 
 hora=$(date '+%H')
 dir="$HOME/Imagens/mojave"
