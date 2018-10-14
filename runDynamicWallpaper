@@ -1,4 +1,13 @@
 #! /bin/bash
 
-$HOME/Imagens/mojave/dynamicWallpaper
-watch -n600 $HOME/Imagens/mojave/dynamicWallpaper &>/dev/null &
+/home/$USER/Imagens/mojave/dynamicWallpaper
+
+teste=$(date '+%M:%S')
+if [ "$teste" = "00:00" ]; then
+ watch -n3600 /home/$USER/Imagens/mojave/dynamicWallpaper &>/dev/null
+else
+ now=$((3600 - $(($(date '+%M') * 60 + $(date '+%S'))))) 
+ watch -n$now /home/$USER/mojave/dynamicWallpaper
+fi
+
+

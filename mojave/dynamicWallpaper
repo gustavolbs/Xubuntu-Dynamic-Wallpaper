@@ -1,34 +1,34 @@
-# /bin/bash
+#! /bin/bash
 
 hora=$(date '+%H')
-dir="$HOME/Imagens/mojave"
+dir="/home/$USER/Imagens/mojave"
 
 case $hora in
 
-00) imagem="15.jpeg";;
-01) imagem="15.jpeg";;
-02) imagem="15.jpeg";;
-03) imagem="16.jpeg";;
-04) imagem="16.jpeg";;
-05) imagem="1.jpeg";;
-06) imagem="2.jpeg";;
-07) imagem="3.jpeg";;
-08) imagem="4.jpeg";;
-09) imagem="5.jpeg";;
-10) imagem="6.jpeg";;
-11) imagem="7.jpeg";;
-12) imagem="7.jpeg";;
-13) imagem="8.jpeg";;
-14) imagem="9.jpeg";;
-15) imagem="10.jpeg";;
-16) imagem="11.jpeg";;
-17) imagem="12.jpeg";;
-18) imagem="13.jpeg";;
-19) imagem="13.jpeg";;
-20) imagem="14.jpeg";;
-21) imagem="14.jpeg";;
-22) imagem="14.jpeg";;
-23) imagem="14.jpeg";;
+00) imagem="16.jpeg";;
+01) imagem="16.jpeg";;
+02) imagem="16.jpeg";;
+03) imagem="1.jpeg";;
+04) imagem="1.jpeg";;
+05) imagem="2.jpeg";;
+06) imagem="3.jpeg";;
+07) imagem="4.jpeg";;
+08) imagem="5.jpeg";;
+09) imagem="6.jpeg";;
+10) imagem="7.jpeg";;
+11) imagem="8.jpeg";;
+12) imagem="8.jpeg";;
+13) imagem="9.jpeg";;
+14) imagem="10.jpeg";;
+15) imagem="11.jpeg";;
+16) imagem="12.jpeg";;
+17) imagem="13.jpeg";;
+18) imagem="14.jpeg";;
+19) imagem="14.jpeg";;
+20) imagem="15.jpeg";;
+21) imagem="15.jpeg";;
+22) imagem="15.jpeg";;
+23) imagem="15.jpeg";;
 esac
 
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s "$dir/$imagem"

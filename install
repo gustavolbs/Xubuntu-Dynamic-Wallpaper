@@ -7,25 +7,25 @@ exepath=$(dirname $exe)
 mkdir ~/.config
 mkdir ~/.config/autostart
 
-echo "[Desktop Entry]
+echo "[[Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
 Name=Dynamic-Wallpaper
 Name[pt_BR]=Dynamic-Wallpaper
 Comment=Mojave Dynamic Wallpaper
-Icon=/home/gustavolbs/Downloads/mojave.png
-Exec=/home/gustavolbs/Imagens/./runDynamicWallpaper
+Icon='/home/$USER/Imagens/mojave/mojave.png'
+Exec=nohup '/home/$USER/Imagens/./runDynamicWallpaper'
 Categories=Accessories;Utility;
 Terminal=false
 StartupWMClass=Dynamic-Wallpaper
 Path=
 StartupNotify=false
 OnlyShowIn=XFCE;
-Hidden=false" >> 'Dynamic Wallpaper.desktop'
-chmod 777 'Dynamic Wallpaper.desktop'
-cp 'Dynamic Wallpaper.desktop' '~/.local/share/applications'
-mv 'Dynamic Wallpaper.desktop' ~/.config/autostart
+Hidden=false" >> 'Dynamic-Wallpaper'
+chmod 777 'Dynamic-Wallpaper'
+cp 'Dynamic-Wallpaper' '~/.local/share/applications'
+mv 'Dynamic-Wallpaper' ~/.config/autostart
 
 cd ..
 rm -rf Xubuntu-Dynamic-Wallpaper
