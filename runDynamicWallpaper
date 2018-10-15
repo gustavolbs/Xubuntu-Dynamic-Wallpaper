@@ -7,7 +7,7 @@ if [ "$teste" = "00:00" ]; then
  watch -n3600 /home/$USER/Imagens/mojave/dynamicWallpaper &>/dev/null
 else
  now=$((3600 - $(($(date '+%M') * 60 + $(date '+%S'))))) 
- watch -n$now /home/$USER/mojave/dynamicWallpaper
+ watch -n$now /home/$USER/Imagens/mojave/dynamicWallpaper
 fi
 
 
