@@ -5,28 +5,28 @@ dir="/home/$USER/Imagens/mojave"
 
 case $hora in
 
-00 | 01 | 02) imagem="16";;
+00 | 01 | 02) imagem="15";;
 
-03 | 04) imagem="1";;
+03 | 04) imagem="16";;
 
-05) imagem="2";;
-06) imagem="3";;
-07) imagem="4";;
-08) imagem="5";;
-09) imagem="6";;
-10) imagem="7";;
+05) imagem="1";;
+06) imagem="2";;
+07) imagem="2";;
+08) imagem="4";;
+09) imagem="5";;
+10) imagem="6";;
 
-11 | 12) imagem="8";;
+11 | 12) imagem="7";;
 
-13) imagem="9";;
-14) imagem="10";;
-15) imagem="11";;
-16) imagem="12";;
-17) imagem="13";;
+13) imagem="8";;
+14) imagem="9";;
+15) imagem="10";;
+16) imagem="11";;
+17) imagem="12";;
 
-18 | 19) imagem="14";;
+18 | 19) imagem="13";;
 
-20 | 21 | 22 | 23) imagem="15";;
+20 | 21 | 22 | 23) imagem="14";;
 esac
 
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s "$dir/$imagem.jpeg"
